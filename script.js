@@ -1,5 +1,5 @@
 const RANDOM_QUOTE_API =
-  "https://api.whatdoestrumpthink.com/api/v1/quotes/random";
+  "https://api.kanye.rest";
 const quoteDisplayElement = document.getElementById("quoteDisplay");
 const quoteInputElement = document.getElementById("quoteInput");
 const timerElement = document.getElementById("timer");
@@ -31,7 +31,7 @@ quoteInputElement.addEventListener("input", () => {
 function getRandomQuote() {
   return fetch(RANDOM_QUOTE_API)
     .then((resposne) => resposne.json())
-    .then((data) => data.message);
+    .then((data) => data.quote);
 }
 
 async function getNextQuote() {

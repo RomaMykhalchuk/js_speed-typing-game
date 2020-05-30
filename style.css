@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-family: 'Poppins', sans-serif;
+}
+
 body {
 	display: flex;
 	justify-content: center;
@@ -51,7 +55,7 @@ body {
 }
 
 .correct {
-	color: green;
+	color: rgb(10, 241, 10);
 }
 
 .incorrect {
