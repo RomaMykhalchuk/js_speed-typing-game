@@ -1,5 +1,5 @@
 const RANDOM_QUOTE_API =
-  "https://api.kanye.rest";
+  "https://api.quotable.io/random";
 const quoteDisplayElement = document.getElementById("quoteDisplay");
 const quoteInputElement = document.getElementById("quoteInput");
 const timerElement = document.getElementById("timer");
@@ -31,7 +31,7 @@ quoteInputElement.addEventListener("input", () => {
 function getRandomQuote() {
   return fetch(RANDOM_QUOTE_API)
     .then((resposne) => resposne.json())
-    .then((data) => data.quote);
+    .then((data) => data.content);
 }
 
 async function getNextQuote() {
